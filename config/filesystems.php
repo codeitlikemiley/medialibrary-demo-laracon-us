@@ -60,22 +60,12 @@ return [
             'visibility' => 'public',
         ],
 
-        /*
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_KEY'),
             'secret' => env('AWS_SECRET'),
             'region' => env('AWS_REGION'),
             'bucket' => env('AWS_BUCKET'),
-        ],
-        */
-
-
-        's3' => [
-            'driver' => 'local',
-            'root' => storage_path('app/public/s3'),
-            'url' => env('APP_URL').'/s3',
-            'visibility' => 'public',
         ],
     ],
 

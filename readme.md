@@ -1,11 +1,6 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Medialibrary demo app for Laracon 2018
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+This repo contains a demo app to showcase [laravel-mediabrary](https://docs.spatie.be/laravel-medialibrary/v7/introduction). All the demo's are located in the [route file](https://github.com/spatie/medialibrary-demo-laracon-us/blob/af90d0ff92714c0960dbeba9a5a29d86a7c45e2b/routes/web.php). You can run hit the demo routes using [the `demo` command](https://github.com/spatie/medialibrary-demo-laracon-us/blob/af90d0ff92714c0960dbeba9a5a29d86a7c45e2b/app/Console/Commands/Demo.php).
 
 ## About Laravel
 

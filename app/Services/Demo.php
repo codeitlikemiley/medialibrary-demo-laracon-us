@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use File;
+use Illuminate\Support\Facades\File;
 use Symfony\Component\Finder\SplFileInfo;
 
 class Demo
@@ -11,7 +11,11 @@ class Demo
     {
         File::cleanDirectory(storage_path('demo'));
 
-        collect(File::allFiles(storage_path('app/stubs')))->each(function(SplFileInfo $file) {
+        $destinationPath = storage_path('demo');
+
+        File::makeDirectory($destinationPath, 0777, true, true);
+
+        collect(File::allFiles(storage_path('app/stubs')))->each(function (SplFileInfo $file) {
             $destination = storage_path("demo/{$file->getFilename()}");
 
             copy($file->getRealPath(), $destination);

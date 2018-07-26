@@ -3,10 +3,8 @@
 namespace App\Console\Commands;
 
 use App\Services\Demo as DemoService;
-use File;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Route;
-use Symfony\Component\Finder\SplFileInfo;
 
 class Demo extends Command
 {
@@ -18,10 +16,8 @@ class Demo extends Command
     {
         $demoRouteUris = $this->getDemoRouteUris();
 
-        while(true) {
-
+        while (true) {
             $this->performLoop($demoRouteUris);
-
         }
     }
 
@@ -45,7 +41,7 @@ class Demo extends Command
     protected function getDemoRouteUris(): array
     {
         return collect(Route::getRoutes())
-            ->reject(function($route) {
+            ->reject(function ($route) {
                 return str_contains($route->uri, '/');
             })
             ->pluck('uri')

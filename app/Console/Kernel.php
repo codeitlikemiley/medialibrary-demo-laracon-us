@@ -2,7 +2,6 @@
 
 namespace App\Console;
 
-use App\Console\Commands\Browser;
 use App\Console\Commands\Demo;
 use App\Console\Commands\ResetDemo;
 use Illuminate\Console\Scheduling\Schedule;

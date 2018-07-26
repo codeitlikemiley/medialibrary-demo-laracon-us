@@ -4,13 +4,6 @@ use App\Article;
 use Spatie\MediaLibrary\MediaStream;
 use Spatie\MediaLibrary\Models\Media;
 
-
-
-
-
-
-
-
 Route::get('add-media-to-library', function () {
 
     // Welcome, here's the 101
@@ -52,7 +45,7 @@ Route::get('add-media-from-a-request', function () {
 
 
 
-Route::get('using-collections', function() {
+Route::get('using-collections', function () {
 
     // Use the collection, Luke!
 
@@ -76,7 +69,7 @@ Route::get('using-collections', function() {
 
 
 
-Route::get('delete-models', function() {
+Route::get('delete-models', function () {
 
     // Let's delete all models
 
@@ -149,7 +142,7 @@ Route::get('non-queued-conversions', function() {
 
 
 
-Route::get('optimized-images', function() {
+Route::get('optimized-images', function () {
 
     // Let's turn off the optimization
 
@@ -199,7 +192,7 @@ Route::get('pdf-conversions', function () {
 
 
 
-Route::get('customizing-the-path', function() {
+Route::get('customizing-the-path', function () {
 
     // Let's use a path generator
 
@@ -243,7 +236,7 @@ Route::get('using-s3', function () {
 
 
 
-Route::get('defining-media-collections', function() {
+Route::get('defining-media-collections', function () {
 
     // Let's define a media collection
 
@@ -266,7 +259,7 @@ Route::get('defining-media-collections', function() {
 
 
 
-Route::get('downloading-a-file', function() {
+Route::get('downloading-a-file', function () {
 
     // Let's download a file from the local filesystem
 
@@ -291,7 +284,7 @@ Route::get('downloading-a-file', function() {
 
 
 
-Route::get('downloading-a-file-from-s3', function() {
+Route::get('downloading-a-file-from-s3', function () {
 
     // Let's download a file from a cloud filesystem
 
@@ -317,7 +310,7 @@ Route::get('downloading-a-file-from-s3', function() {
 
 
 
-Route::get('downloading-multiple-files', function() {
+Route::get('downloading-multiple-files', function () {
 
     // Let's download lots of files
 
@@ -345,7 +338,7 @@ Route::get('downloading-multiple-files', function() {
 
 
 
-Route::get('generating-responsive-images', function() {
+Route::get('generating-responsive-images', function () {
 
     // The pledge...
 
@@ -366,7 +359,7 @@ Route::get('generating-responsive-images', function() {
 
 
 
-Route::get('showing-responsive-images', function() {
+Route::get('showing-responsive-images', function () {
 
     // The turn...
 

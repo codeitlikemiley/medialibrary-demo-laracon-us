@@ -9,7 +9,6 @@ class Demo
 {
     public static function resetDemoFiles()
     {
-
         File::cleanDirectory(storage_path('demo'));
 
         collect(File::allFiles(storage_path('app/stubs')))->each(function(SplFileInfo $file) {

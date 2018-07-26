@@ -63,7 +63,7 @@ Route::get('using-collections', function() {
         ->toMediaCollection('images');
 
     $article
-        ->addMedia(storage_path('demo/my-archive.zip'))
+        ->addMedia(storage_path('demo/nova-talk-notes.pdf'))
         ->toMediaCollection('downloads');
 });
 
